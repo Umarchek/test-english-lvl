@@ -1,0 +1,26 @@
+{
+  "name": "test-english-lvl",
+  "version": "1.0.0",
+  "description": "In this bot you can check your average level ENGLISH (grammer)",
+  "main": "main.js",
+  "scripts": {
+    "dev": "nodemon main.js",
+    "start": "node main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UZBase/test-english-lvl.git"
+  },
+  "author": "Umarjon Sharofiddinov",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/UZBase/test-english-lvl/issues"
+  },
+  "homepage": "https://github.com/UZBase/test-english-lvl#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  },
+  "dependencies": {
+    "node-telegram-bot-api": "^0.54.0"
+  }
+}
