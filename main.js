@@ -205,7 +205,7 @@ const start = () => {
                     },
                 });
                 break
-            case "had cut it"& "had it cut"& "have to cut it":
+            case "had cut it" & "had it cut" & "have to cut it":
                 bot.deleteMessage(chat.id, message_id)
                 bot.sendMessage(chat.id, `5. Mr. Halls reads … than anyone I know.`, {
                     parse_mode: "HTML",
@@ -233,7 +233,7 @@ const start = () => {
                     },
                 });
                 break
-            case "faster"& "fastly"& "more fast":
+            case "faster" & "fastly" & "more fast":
                 bot.deleteMessage(chat.id, message_id)
                 bot.sendMessage(chat.id, `6. Neither my mom … me have ever been to Rome.`, {
                     parse_mode: "HTML",
@@ -261,7 +261,7 @@ const start = () => {
                     },
                 });
                 break
-            case "but"& "or"& "nor":
+            case "but" & "or" & "nor":
                 bot.deleteMessage(chat.id, message_id)
                 bot.sendMessage(chat.id, `7. What time does the bus … London?`, {
                     parse_mode: "HTML",
