@@ -121,7 +121,7 @@ const start = () => {
                     },
                 });
                 break
-            case "not to lift" & "isn't lift" & "to not lift":
+            case "not to lift" && "isn't lift" && "to not lift":
                 bot.deleteMessage(chat.id, message_id)
                 bot.sendMessage(chat.id, `2. My brother says he'll never forget … the Niagara Falls for the first time.`, {
                     parse_mode: "HTML",
@@ -149,7 +149,7 @@ const start = () => {
                     },
                 });
                 break
-            case "he saw" & "to see" & "seeing":
+            case "he saw" && "to see" && "seeing":
                 bot.deleteMessage(chat.id, message_id)
                 bot.sendMessage(chat.id, `3. She says that when she was a child bananas … her least favorite fruit.`, {
                     parse_mode: "HTML",
@@ -177,7 +177,7 @@ const start = () => {
                     },
                 });
                 break
-            case "have been" & "are" & "were":
+            case "have been" && "are" && "were":
                 bot.deleteMessage(chat.id, message_id)
                 bot.sendMessage(chat.id, `4. Rita wanted to change her hairstyle, so she … by a professional stylist.`, {
                     parse_mode: "HTML",
@@ -205,7 +205,7 @@ const start = () => {
                     },
                 });
                 break
-            case "had cut it" & "had it cut" & "have to cut it":
+            case "had cut it" && "had it cut" && "have to cut it":
                 bot.deleteMessage(chat.id, message_id)
                 bot.sendMessage(chat.id, `5. Mr. Halls reads … than anyone I know.`, {
                     parse_mode: "HTML",
