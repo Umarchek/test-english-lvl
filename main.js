@@ -496,7 +496,7 @@ const start = () => {
                 },
             });
         }
-        function sixteen(){
+        function sixteen() {
             bot.deleteMessage(chat.id, message_id)
             bot.sendMessage(chat.id, `16. Wendy is … shy to ask what he thinks about her present.`, {
                 parse_mode: "HTML",
@@ -524,7 +524,7 @@ const start = () => {
                 },
             });
         }
-        function seventeen(){
+        function seventeen() {
             bot.deleteMessage(chat.id, message_id)
             bot.sendMessage(chat.id, `17. Our health has greatly … ever since we stopped eating sugar.`, {
                 parse_mode: "HTML",
@@ -552,7 +552,7 @@ const start = () => {
                 },
             });
         }
-        function eighteen(){
+        function eighteen() {
             bot.deleteMessage(chat.id, message_id)
             bot.sendMessage(chat.id, `18. Fred … have painted such a winderful picture. He has never liked drawing!`, {
                 parse_mode: "HTML",
@@ -574,6 +574,62 @@ const start = () => {
                             {
                                 text: "can't",
                                 callback_data: "can't",
+                            },
+                        ],
+                    ],
+                },
+            });
+        }
+        function nineteen() {
+            bot.deleteMessage(chat.id, message_id)
+            bot.sendMessage(chat.id, `19. This novel … at the end of the 19th century.`, {
+                parse_mode: "HTML",
+                reply_markup: {
+                    inline_keyboard: [
+                        [
+                            {
+                                text: "was written",
+                                callback_data: "was written",
+                            },
+                        ],
+                        [
+                            {
+                                text: "wrote",
+                                callback_data: "wrote",
+                            },
+                        ],
+                        [
+                            {
+                                text: "had written",
+                                callback_data: "had written",
+                            },
+                        ],
+                    ],
+                },
+            });
+        }
+        function twenty() {
+            bot.deleteMessage(chat.id, message_id)
+            bot.sendMessage(chat.id, `20. Hurry up. The lesson … at 9.00 pm.`, {
+                parse_mode: "HTML",
+                reply_markup: {
+                    inline_keyboard: [
+                        [
+                            {
+                                text: "will start",
+                                callback_data: "will start",
+                            },
+                        ],
+                        [
+                            {
+                                text: "is starting",
+                                callback_data: "is starting",
+                            },
+                        ],
+                        [
+                            {
+                                text: "starts",
+                                callback_data: "starts",
                             },
                         ],
                     ],
@@ -757,64 +813,22 @@ const start = () => {
                 eighteen()
                 break
             case "shouldn't":
+                nineteen()
+                break
             case "needn't":
+                nineteen()
+                break
             case "can't":
-                bot.deleteMessage(chat.id, message_id)
-                bot.sendMessage(chat.id, `19. This novel … at the end of the 19th century.`, {
-                    parse_mode: "HTML",
-                    reply_markup: {
-                        inline_keyboard: [
-                            [
-                                {
-                                    text: "was written",
-                                    callback_data: "was written",
-                                },
-                            ],
-                            [
-                                {
-                                    text: "wrote",
-                                    callback_data: "wrote",
-                                },
-                            ],
-                            [
-                                {
-                                    text: "had written",
-                                    callback_data: "had written",
-                                },
-                            ],
-                        ],
-                    },
-                });
+                nineteen()
                 break
             case "was written":
+                twenty()
+                break
             case "wrote":
+                twenty()
+                break
             case "had written":
-                bot.deleteMessage(chat.id, message_id)
-                bot.sendMessage(chat.id, `20. Hurry up. The lesson … at 9.00 pm.`, {
-                    parse_mode: "HTML",
-                    reply_markup: {
-                        inline_keyboard: [
-                            [
-                                {
-                                    text: "will start",
-                                    callback_data: "will start",
-                                },
-                            ],
-                            [
-                                {
-                                    text: "is starting",
-                                    callback_data: "is starting",
-                                },
-                            ],
-                            [
-                                {
-                                    text: "starts",
-                                    callback_data: "starts",
-                                },
-                            ],
-                        ],
-                    },
-                });
+                twenty()
                 break
         }
     });
