@@ -121,7 +121,9 @@ const start = () => {
                     },
                 });
                 break
-            case "not to lift" && "isn't lift" && "to not lift":
+            case "not to lift":
+            case "isn't lift":
+            case "to not lift":
                 bot.deleteMessage(chat.id, message_id)
                 bot.sendMessage(chat.id, `2. My brother says he'll never forget … the Niagara Falls for the first time.`, {
                     parse_mode: "HTML",
@@ -130,13 +132,13 @@ const start = () => {
                             [
                                 {
                                     text: "he saw",
-                                    callback_data: "not to lift",
+                                    callback_data: "he saw",
                                 },
                             ],
                             [
                                 {
                                     text: "to see",
-                                    callback_data: "isn't lift",
+                                    callback_data: "to see",
                                 },
                             ],
                             [
@@ -149,7 +151,9 @@ const start = () => {
                     },
                 });
                 break
-            case "he saw" && "to see" && "seeing":
+            case "he saw":
+            case "to see":
+            case "seeing":
                 bot.deleteMessage(chat.id, message_id)
                 bot.sendMessage(chat.id, `3. She says that when she was a child bananas … her least favorite fruit.`, {
                     parse_mode: "HTML",
@@ -177,7 +181,9 @@ const start = () => {
                     },
                 });
                 break
-            case "have been" && "are" && "were":
+            case "have been":
+            case "are":
+            case "were":
                 bot.deleteMessage(chat.id, message_id)
                 bot.sendMessage(chat.id, `4. Rita wanted to change her hairstyle, so she … by a professional stylist.`, {
                     parse_mode: "HTML",
@@ -205,7 +211,9 @@ const start = () => {
                     },
                 });
                 break
-            case "had cut it" && "had it cut" && "have to cut it":
+            case "had cut it":
+            case "had it cut":
+            case "have to cut it":
                 bot.deleteMessage(chat.id, message_id)
                 bot.sendMessage(chat.id, `5. Mr. Halls reads … than anyone I know.`, {
                     parse_mode: "HTML",
@@ -233,7 +241,9 @@ const start = () => {
                     },
                 });
                 break
-            case "faster" & "fastly" & "more fast":
+            case "faster":
+            case "fastly":
+            case "more fast":
                 bot.deleteMessage(chat.id, message_id)
                 bot.sendMessage(chat.id, `6. Neither my mom … me have ever been to Rome.`, {
                     parse_mode: "HTML",
@@ -261,7 +271,9 @@ const start = () => {
                     },
                 });
                 break
-            case "but" & "or" & "nor":
+            case "but":
+            case "or":
+            case "nor":
                 bot.deleteMessage(chat.id, message_id)
                 bot.sendMessage(chat.id, `7. What time does the bus … London?`, {
                     parse_mode: "HTML",
@@ -289,6 +301,96 @@ const start = () => {
                     },
                 });
                 break
+            case "arrive":
+            case "comes":
+            case "reach":
+                bot.deleteMessage(chat.id, message_id)
+                bot.sendMessage(chat.id, `8. She must … on the phone. His line is constatnly busy.`, {
+                    parse_mode: "HTML",
+                    reply_markup: {
+                        inline_keyboard: [
+                            [
+                                {
+                                    text: "talked",
+                                    callback_data: "talked",
+                                },
+                            ],
+                            [
+                                {
+                                    text: "be talking",
+                                    callback_data: "be talking",
+                                },
+                            ],
+                            [
+                                {
+                                    text: "have talked",
+                                    callback_data: "have talked",
+                                },
+                            ],
+                        ],
+                    },
+                });
+                break
+            case "talked":
+            case "be talking":
+            case "have talked":
+                bot.deleteMessage(chat.id, message_id)
+                bot.sendMessage(chat.id, `9. They said they … a wonderful time in Istanbul the previous spring.`, {
+                    parse_mode: "HTML",
+                    reply_markup: {
+                        inline_keyboard: [
+                            [
+                                {
+                                    text: "had had",
+                                    callback_data: "had had",
+                                },
+                            ],
+                            [
+                                {
+                                    text: "were having",
+                                    callback_data: "were having",
+                                },
+                            ],
+                            [
+                                {
+                                    text: "would have",
+                                    callback_data: "would have",
+                                },
+                            ],
+                        ],
+                    },
+                });
+                break
+            case"had had":
+            case"were having":
+            case"would have":
+            bot.deleteMessage(chat.id, message_id)
+            bot.sendMessage(chat.id, `10. After working at the hospltal for a year, Bob finally … to sleepless nights.            `, {
+                parse_mode: "HTML",
+                reply_markup: {
+                    inline_keyboard: [
+                        [
+                            {
+                                text: "was used to",
+                                callback_data: "was used to",
+                            },
+                        ],
+                        [
+                            {
+                                text: "got used to",
+                                callback_data: "got used to",
+                            },
+                        ],
+                        [
+                            {
+                                text: "used to",
+                                callback_data: "used to",
+                            },
+                        ],
+                    ],
+                },
+            });
+            break
         }
     });
 }
