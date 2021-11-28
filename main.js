@@ -69,6 +69,209 @@ const start = () => {
     )
     bot.on("callback_query", async (query) => {
         const { chat, message_id, text } = query.message;
+        var count = 0
+        function one() {
+            bot.sendMessage(chat.id, `1. He advised me … the heavy furniture.`, {
+                parse_mode: "HTML",
+                reply_markup: {
+                    inline_keyboard: [
+                        [
+                            {
+                                text: "not to lift",
+                                callback_data: "not to lift",
+                            },
+                        ],
+                        [
+                            {
+                                text: "isn't lift",
+                                callback_data: "isn't lift",
+                            },
+                        ],
+                        [
+                            {
+                                text: "to not lift",
+                                callback_data: "to not lift",
+                            },
+                        ],
+                        [
+                            {
+                                text: "Не знаю",
+                                callback_data: "Не знаю",
+                            },
+                        ]
+                    ],
+                },
+            });
+        }
+        function two() {
+            bot.deleteMessage(chat.id, message_id)
+            bot.sendMessage(chat.id, `2. My brother says he'll never forget … the Niagara Falls for the first time.`, {
+                parse_mode: "HTML",
+                reply_markup: {
+                    inline_keyboard: [
+                        [
+                            {
+                                text: "he saw",
+                                callback_data: "he saw",
+                            },
+                        ],
+                        [
+                            {
+                                text: "to see",
+                                callback_data: "to see",
+                            },
+                        ],
+                        [
+                            {
+                                text: "seeing",
+                                callback_data: "seeing",
+                            },
+                        ],
+                    ],
+                },
+            });
+
+        }
+        function third() {
+            bot.deleteMessage(chat.id, message_id)
+            bot.sendMessage(chat.id, `3. She says that when she was a child bananas … her least favorite fruit.`, {
+                parse_mode: "HTML",
+                reply_markup: {
+                    inline_keyboard: [
+                        [
+                            {
+                                text: "have been",
+                                callback_data: "have been",
+                            },
+                        ],
+                        [
+                            {
+                                text: "are",
+                                callback_data: "are",
+                            },
+                        ],
+                        [
+                            {
+                                text: "were",
+                                callback_data: "were",
+                            },
+                        ],
+                    ],
+                },
+            });
+        }
+        function four() {
+            bot.deleteMessage(chat.id, message_id)
+            bot.sendMessage(chat.id, `4. Rita wanted to change her hairstyle, so she … by a professional stylist.`, {
+                parse_mode: "HTML",
+                reply_markup: {
+                    inline_keyboard: [
+                        [
+                            {
+                                text: "had cut it",
+                                callback_data: "had cut it",
+                            },
+                        ],
+                        [
+                            {
+                                text: "had it cut",
+                                callback_data: "had it cut",
+                            },
+                        ],
+                        [
+                            {
+                                text: "have to cut it",
+                                callback_data: "have to cut it",
+                            },
+                        ],
+                    ],
+                },
+            });
+        }
+        function five() {
+            bot.deleteMessage(chat.id, message_id)
+            bot.sendMessage(chat.id, `5. Mr. Halls reads … than anyone I know.`, {
+                parse_mode: "HTML",
+                reply_markup: {
+                    inline_keyboard: [
+                        [
+                            {
+                                text: "faster",
+                                callback_data: "faster",
+                            },
+                        ],
+                        [
+                            {
+                                text: "fastly",
+                                callback_data: "fastly",
+                            },
+                        ],
+                        [
+                            {
+                                text: "more fast",
+                                callback_data: "more fast",
+                            },
+                        ],
+                    ],
+                },
+            });
+        }
+        function six() {
+            bot.deleteMessage(chat.id, message_id)
+            bot.sendMessage(chat.id, `6. Neither my mom … me have ever been to Rome.`, {
+                parse_mode: "HTML",
+                reply_markup: {
+                    inline_keyboard: [
+                        [
+                            {
+                                text: "but",
+                                callback_data: "but",
+                            },
+                        ],
+                        [
+                            {
+                                text: "or",
+                                callback_data: "or",
+                            },
+                        ],
+                        [
+                            {
+                                text: "nor",
+                                callback_data: "nor",
+                            },
+                        ],
+                    ],
+                },
+            });
+        }
+        function seven(){
+            bot.deleteMessage(chat.id, message_id)
+            bot.sendMessage(chat.id, `7. What time does the bus … London?`, {
+                parse_mode: "HTML",
+                reply_markup: {
+                    inline_keyboard: [
+                        [
+                            {
+                                text: "arrive",
+                                callback_data: "arrive",
+                            },
+                        ],
+                        [
+                            {
+                                text: "comes",
+                                callback_data: "comes",
+                            },
+                        ],
+                        [
+                            {
+                                text: "reach",
+                                callback_data: "reach",
+                            },
+                        ],
+                    ],
+                },
+            });
+        }
         switch (query.data) {
             case "Нет, я не знаю.":
                 bot.deleteMessage(chat.id, message_id);
@@ -89,217 +292,58 @@ const start = () => {
                 break
             case "Да, готовь.":
                 bot.deleteMessage(chat.id, message_id);
-                bot.sendMessage(chat.id, `1. He advised me … the heavy furniture.`, {
-                    parse_mode: "HTML",
-                    reply_markup: {
-                        inline_keyboard: [
-                            [
-                                {
-                                    text: "not to lift",
-                                    callback_data: "not to lift",
-                                },
-                            ],
-                            [
-                                {
-                                    text: "isn't lift",
-                                    callback_data: "isn't lift",
-                                },
-                            ],
-                            [
-                                {
-                                    text: "to not lift",
-                                    callback_data: "to not lift",
-                                },
-                            ],
-                            [
-                                {
-                                    text: "Не знаю",
-                                    callback_data: "Не знаю",
-                                },
-                            ]
-                        ],
-                    },
-                });
+                one()
                 break
             case "not to lift":
+                two()
+                break
             case "isn't lift":
+                two()
+                break
             case "to not lift":
-                bot.deleteMessage(chat.id, message_id)
-                bot.sendMessage(chat.id, `2. My brother says he'll never forget … the Niagara Falls for the first time.`, {
-                    parse_mode: "HTML",
-                    reply_markup: {
-                        inline_keyboard: [
-                            [
-                                {
-                                    text: "he saw",
-                                    callback_data: "he saw",
-                                },
-                            ],
-                            [
-                                {
-                                    text: "to see",
-                                    callback_data: "to see",
-                                },
-                            ],
-                            [
-                                {
-                                    text: "seeing",
-                                    callback_data: "seeing",
-                                },
-                            ],
-                        ],
-                    },
-                });
+                two()
+                break
+            case "seeing":
+                third()
+                break
+            case "to see":
+                third()
                 break
             case "he saw":
-            case "to see":
-            case "seeing":
-                bot.deleteMessage(chat.id, message_id)
-                bot.sendMessage(chat.id, `3. She says that when she was a child bananas … her least favorite fruit.`, {
-                    parse_mode: "HTML",
-                    reply_markup: {
-                        inline_keyboard: [
-                            [
-                                {
-                                    text: "have been",
-                                    callback_data: "have been",
-                                },
-                            ],
-                            [
-                                {
-                                    text: "are",
-                                    callback_data: "are",
-                                },
-                            ],
-                            [
-                                {
-                                    text: "were",
-                                    callback_data: "were",
-                                },
-                            ],
-                        ],
-                    },
-                });
+                console.log(count)
+                third()
                 break
             case "have been":
+                four()
+                break
             case "are":
+                four()
+                break
             case "were":
-                bot.deleteMessage(chat.id, message_id)
-                bot.sendMessage(chat.id, `4. Rita wanted to change her hairstyle, so she … by a professional stylist.`, {
-                    parse_mode: "HTML",
-                    reply_markup: {
-                        inline_keyboard: [
-                            [
-                                {
-                                    text: "had cut it",
-                                    callback_data: "had cut it",
-                                },
-                            ],
-                            [
-                                {
-                                    text: "had it cut",
-                                    callback_data: "had it cut",
-                                },
-                            ],
-                            [
-                                {
-                                    text: "have to cut it",
-                                    callback_data: "have to cut it",
-                                },
-                            ],
-                        ],
-                    },
-                });
+                four()
                 break
             case "had cut it":
+                five()
+                break
             case "had it cut":
+                five()
+                break
             case "have to cut it":
-                bot.deleteMessage(chat.id, message_id)
-                bot.sendMessage(chat.id, `5. Mr. Halls reads … than anyone I know.`, {
-                    parse_mode: "HTML",
-                    reply_markup: {
-                        inline_keyboard: [
-                            [
-                                {
-                                    text: "faster",
-                                    callback_data: "faster",
-                                },
-                            ],
-                            [
-                                {
-                                    text: "fastly",
-                                    callback_data: "fastly",
-                                },
-                            ],
-                            [
-                                {
-                                    text: "more fast",
-                                    callback_data: "more fast",
-                                },
-                            ],
-                        ],
-                    },
-                });
+                five()
                 break
             case "faster":
+                six()
+                break
             case "fastly":
+                six()
+                break
             case "more fast":
-                bot.deleteMessage(chat.id, message_id)
-                bot.sendMessage(chat.id, `6. Neither my mom … me have ever been to Rome.`, {
-                    parse_mode: "HTML",
-                    reply_markup: {
-                        inline_keyboard: [
-                            [
-                                {
-                                    text: "but",
-                                    callback_data: "but",
-                                },
-                            ],
-                            [
-                                {
-                                    text: "or",
-                                    callback_data: "or",
-                                },
-                            ],
-                            [
-                                {
-                                    text: "nor",
-                                    callback_data: "nor",
-                                },
-                            ],
-                        ],
-                    },
-                });
+                six()
                 break
             case "but":
             case "or":
             case "nor":
-                bot.deleteMessage(chat.id, message_id)
-                bot.sendMessage(chat.id, `7. What time does the bus … London?`, {
-                    parse_mode: "HTML",
-                    reply_markup: {
-                        inline_keyboard: [
-                            [
-                                {
-                                    text: "arrive",
-                                    callback_data: "arrive",
-                                },
-                            ],
-                            [
-                                {
-                                    text: "comes",
-                                    callback_data: "comes",
-                                },
-                            ],
-                            [
-                                {
-                                    text: "reach",
-                                    callback_data: "reach",
-                                },
-                            ],
-                        ],
-                    },
-                });
+
                 break
             case "arrive":
             case "comes":
@@ -601,36 +645,96 @@ const start = () => {
                     },
                 });
                 break
-            case"developed":
-            case"increased":
-            case"improved":
-            bot.deleteMessage(chat.id, message_id)
-            bot.sendMessage(chat.id, `18. Fred … have painted such a winderful picture. He has never liked drawing!`, {
-                parse_mode: "HTML",
-                reply_markup: {
-                    inline_keyboard: [
-                        [
-                            {
-                                text: "shouldn't",
-                                callback_data: "shouldn't",
-                            },
+            case "developed":
+            case "increased":
+            case "improved":
+                bot.deleteMessage(chat.id, message_id)
+                bot.sendMessage(chat.id, `18. Fred … have painted such a winderful picture. He has never liked drawing!`, {
+                    parse_mode: "HTML",
+                    reply_markup: {
+                        inline_keyboard: [
+                            [
+                                {
+                                    text: "shouldn't",
+                                    callback_data: "shouldn't",
+                                },
+                            ],
+                            [
+                                {
+                                    text: "needn't",
+                                    callback_data: "needn't",
+                                },
+                            ],
+                            [
+                                {
+                                    text: "can't",
+                                    callback_data: "can't",
+                                },
+                            ],
                         ],
-                        [
-                            {
-                                text: "needn't",
-                                callback_data: "needn't",
-                            },
+                    },
+                });
+                break
+            case "shouldn't":
+            case "needn't":
+            case "can't":
+                bot.deleteMessage(chat.id, message_id)
+                bot.sendMessage(chat.id, `19. This novel … at the end of the 19th century.`, {
+                    parse_mode: "HTML",
+                    reply_markup: {
+                        inline_keyboard: [
+                            [
+                                {
+                                    text: "was written",
+                                    callback_data: "was written",
+                                },
+                            ],
+                            [
+                                {
+                                    text: "wrote",
+                                    callback_data: "wrote",
+                                },
+                            ],
+                            [
+                                {
+                                    text: "had written",
+                                    callback_data: "had written",
+                                },
+                            ],
                         ],
-                        [
-                            {
-                                text: "can't",
-                                callback_data: "can't",
-                            },
+                    },
+                });
+                break
+            case "was written":
+            case "wrote":
+            case "had written":
+                bot.deleteMessage(chat.id, message_id)
+                bot.sendMessage(chat.id, `20. Hurry up. The lesson … at 9.00 pm.`, {
+                    parse_mode: "HTML",
+                    reply_markup: {
+                        inline_keyboard: [
+                            [
+                                {
+                                    text: "will start",
+                                    callback_data: "will start",
+                                },
+                            ],
+                            [
+                                {
+                                    text: "is starting",
+                                    callback_data: "is starting",
+                                },
+                            ],
+                            [
+                                {
+                                    text: "starts",
+                                    callback_data: "starts",
+                                },
+                            ],
                         ],
-                    ],
-                },
-            });
-            break
+                    },
+                });
+                break
         }
     });
 }
