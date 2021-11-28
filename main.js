@@ -440,6 +440,62 @@ const start = () => {
                 },
             });
         }
+        function fourteen() {
+            bot.deleteMessage(chat.id, message_id)
+            bot.sendMessage(chat.id, `14. Liza didn't mean … you. It was just a bad joke.`, {
+                parse_mode: "HTML",
+                reply_markup: {
+                    inline_keyboard: [
+                        [
+                            {
+                                text: "offend",
+                                callback_data: "offend",
+                            },
+                        ],
+                        [
+                            {
+                                text: "offending",
+                                callback_data: "offending",
+                            },
+                        ],
+                        [
+                            {
+                                text: "to offend",
+                                callback_data: "to offend",
+                            },
+                        ],
+                    ],
+                },
+            });
+        }
+        function fifteen() {
+            bot.deleteMessage(chat.id, message_id)
+            bot.sendMessage(chat.id, `15. Debora tells the … stories I have ever heard.`, {
+                parse_mode: "HTML",
+                reply_markup: {
+                    inline_keyboard: [
+                        [
+                            {
+                                text: "better",
+                                callback_data: "better",
+                            },
+                        ],
+                        [
+                            {
+                                text: "best",
+                                callback_data: "best",
+                            },
+                        ],
+                        [
+                            {
+                                text: "most good",
+                                callback_data: "most good",
+                            },
+                        ],
+                    ],
+                },
+            });
+        }
         switch (query.data) {
             case "Нет, я не знаю.":
                 bot.deleteMessage(chat.id, message_id);
@@ -572,64 +628,22 @@ const start = () => {
                 thirteen()
                 break
             case "are they":
+                fourteen()
+                break
             case "they were":
+                fourteen()
+                break
             case "were they":
-                bot.deleteMessage(chat.id, message_id)
-                bot.sendMessage(chat.id, `14. Liza didn't mean … you. It was just a bad joke.`, {
-                    parse_mode: "HTML",
-                    reply_markup: {
-                        inline_keyboard: [
-                            [
-                                {
-                                    text: "offend",
-                                    callback_data: "offend",
-                                },
-                            ],
-                            [
-                                {
-                                    text: "offending",
-                                    callback_data: "offending",
-                                },
-                            ],
-                            [
-                                {
-                                    text: "to offend",
-                                    callback_data: "to offend",
-                                },
-                            ],
-                        ],
-                    },
-                });
+                fourteen()
                 break
             case "offend":
+                fifteen()
+                break
             case "offending":
+                fifteen()
+                break
             case "to offend":
-                bot.deleteMessage(chat.id, message_id)
-                bot.sendMessage(chat.id, `15. Debora tells the … stories I have ever heard.`, {
-                    parse_mode: "HTML",
-                    reply_markup: {
-                        inline_keyboard: [
-                            [
-                                {
-                                    text: "better",
-                                    callback_data: "better",
-                                },
-                            ],
-                            [
-                                {
-                                    text: "best",
-                                    callback_data: "best",
-                                },
-                            ],
-                            [
-                                {
-                                    text: "most good",
-                                    callback_data: "most good",
-                                },
-                            ],
-                        ],
-                    },
-                });
+                fifteen()
                 break
             case "better":
             case "best":
