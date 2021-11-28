@@ -496,6 +496,90 @@ const start = () => {
                 },
             });
         }
+        function sixteen(){
+            bot.deleteMessage(chat.id, message_id)
+            bot.sendMessage(chat.id, `16. Wendy is … shy to ask what he thinks about her present.`, {
+                parse_mode: "HTML",
+                reply_markup: {
+                    inline_keyboard: [
+                        [
+                            {
+                                text: "enough",
+                                callback_data: "enough",
+                            },
+                        ],
+                        [
+                            {
+                                text: "too",
+                                callback_data: "too",
+                            },
+                        ],
+                        [
+                            {
+                                text: "very",
+                                callback_data: "very",
+                            },
+                        ],
+                    ],
+                },
+            });
+        }
+        function seventeen(){
+            bot.deleteMessage(chat.id, message_id)
+            bot.sendMessage(chat.id, `17. Our health has greatly … ever since we stopped eating sugar.`, {
+                parse_mode: "HTML",
+                reply_markup: {
+                    inline_keyboard: [
+                        [
+                            {
+                                text: "developed",
+                                callback_data: "developed",
+                            },
+                        ],
+                        [
+                            {
+                                text: "increased",
+                                callback_data: "increased",
+                            },
+                        ],
+                        [
+                            {
+                                text: "improved",
+                                callback_data: "improved",
+                            },
+                        ],
+                    ],
+                },
+            });
+        }
+        function eighteen(){
+            bot.deleteMessage(chat.id, message_id)
+            bot.sendMessage(chat.id, `18. Fred … have painted such a winderful picture. He has never liked drawing!`, {
+                parse_mode: "HTML",
+                reply_markup: {
+                    inline_keyboard: [
+                        [
+                            {
+                                text: "shouldn't",
+                                callback_data: "shouldn't",
+                            },
+                        ],
+                        [
+                            {
+                                text: "needn't",
+                                callback_data: "needn't",
+                            },
+                        ],
+                        [
+                            {
+                                text: "can't",
+                                callback_data: "can't",
+                            },
+                        ],
+                    ],
+                },
+            });
+        }
         switch (query.data) {
             case "Нет, я не знаю.":
                 bot.deleteMessage(chat.id, message_id);
@@ -646,94 +730,31 @@ const start = () => {
                 fifteen()
                 break
             case "better":
+                sixteen()
+                break
             case "best":
+                sixteen()
+                break
             case "most good":
-                bot.deleteMessage(chat.id, message_id)
-                bot.sendMessage(chat.id, `16. Wendy is … shy to ask what he thinks about her present.`, {
-                    parse_mode: "HTML",
-                    reply_markup: {
-                        inline_keyboard: [
-                            [
-                                {
-                                    text: "enough",
-                                    callback_data: "enough",
-                                },
-                            ],
-                            [
-                                {
-                                    text: "too",
-                                    callback_data: "too",
-                                },
-                            ],
-                            [
-                                {
-                                    text: "very",
-                                    callback_data: "very",
-                                },
-                            ],
-                        ],
-                    },
-                });
+                sixteen()
                 break
             case "enough":
+                seventeen()
+                break
             case "too":
+                seventeen()
+                break
             case "very":
-                bot.deleteMessage(chat.id, message_id)
-                bot.sendMessage(chat.id, `17. Our health has greatly … ever since we stopped eating sugar.`, {
-                    parse_mode: "HTML",
-                    reply_markup: {
-                        inline_keyboard: [
-                            [
-                                {
-                                    text: "developed",
-                                    callback_data: "developed",
-                                },
-                            ],
-                            [
-                                {
-                                    text: "increased",
-                                    callback_data: "increased",
-                                },
-                            ],
-                            [
-                                {
-                                    text: "improved",
-                                    callback_data: "improved",
-                                },
-                            ],
-                        ],
-                    },
-                });
+                seventeen()
                 break
             case "developed":
+                eighteen()
+                break
             case "increased":
+                eighteen()
+                break
             case "improved":
-                bot.deleteMessage(chat.id, message_id)
-                bot.sendMessage(chat.id, `18. Fred … have painted such a winderful picture. He has never liked drawing!`, {
-                    parse_mode: "HTML",
-                    reply_markup: {
-                        inline_keyboard: [
-                            [
-                                {
-                                    text: "shouldn't",
-                                    callback_data: "shouldn't",
-                                },
-                            ],
-                            [
-                                {
-                                    text: "needn't",
-                                    callback_data: "needn't",
-                                },
-                            ],
-                            [
-                                {
-                                    text: "can't",
-                                    callback_data: "can't",
-                                },
-                            ],
-                        ],
-                    },
-                });
+                eighteen()
                 break
             case "shouldn't":
             case "needn't":
