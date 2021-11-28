@@ -341,9 +341,13 @@ const start = () => {
                 six()
                 break
             case "but":
+                seven()
+                break
             case "or":
+                seven()
+                break
             case "nor":
-
+                seven()
                 break
             case "arrive":
             case "comes":
