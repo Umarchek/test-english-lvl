@@ -361,30 +361,270 @@ const start = () => {
                     },
                 });
                 break
-            case"had had":
-            case"were having":
-            case"would have":
+            case "had had":
+            case "were having":
+            case "would have":
+                bot.deleteMessage(chat.id, message_id)
+                bot.sendMessage(chat.id, `10. After working at the hospltal for a year, Bob finally … to sleepless nights.`, {
+                    parse_mode: "HTML",
+                    reply_markup: {
+                        inline_keyboard: [
+                            [
+                                {
+                                    text: "was used to",
+                                    callback_data: "was used to",
+                                },
+                            ],
+                            [
+                                {
+                                    text: "got used to",
+                                    callback_data: "got used to",
+                                },
+                            ],
+                            [
+                                {
+                                    text: "used to",
+                                    callback_data: "used to",
+                                },
+                            ],
+                        ],
+                    },
+                });
+                break
+            case "was used to":
+            case "got used to":
+            case "used to":
+                bot.deleteMessage(chat.id, message_id)
+                bot.sendMessage(chat.id, `11. The athletes … for two hours before they decided to have a break.`, {
+                    parse_mode: "HTML",
+                    reply_markup: {
+                        inline_keyboard: [
+                            [
+                                {
+                                    text: "have been training",
+                                    callback_data: "have been training",
+                                },
+                            ],
+                            [
+                                {
+                                    text: "had been training",
+                                    callback_data: "had been training",
+                                },
+                            ],
+                            [
+                                {
+                                    text: "must have training",
+                                    callback_data: "must have training",
+                                },
+                            ],
+                        ],
+                    },
+                });
+                break
+            case "have been training":
+            case "had been training":
+            case "must have training":
+                bot.deleteMessage(chat.id, message_id)
+                bot.sendMessage(chat.id, `12. If John … them, they wouldn't have opened the café on time.`, {
+                    parse_mode: "HTML",
+                    reply_markup: {
+                        inline_keyboard: [
+                            [
+                                {
+                                    text: "haven't helped",
+                                    callback_data: "haven't helped",
+                                },
+                            ],
+                            [
+                                {
+                                    text: "wouldn't help",
+                                    callback_data: "wouldn't help",
+                                },
+                            ],
+                            [
+                                {
+                                    text: "hadn't helped",
+                                    callback_data: "hadn't helped",
+                                },
+                            ],
+                        ],
+                    },
+                });
+                break
+            case "haven't helped":
+            case "wouldn't help":
+            case "hadn't helped":
+                bot.deleteMessage(chat.id, message_id)
+                bot.sendMessage(chat.id, `13. Bill asked his new neighbors where … from.`, {
+                    parse_mode: "HTML",
+                    reply_markup: {
+                        inline_keyboard: [
+                            [
+                                {
+                                    text: "are they",
+                                    callback_data: "are they",
+                                },
+                            ],
+                            [
+                                {
+                                    text: "they were",
+                                    callback_data: "they were",
+                                },
+                            ],
+                            [
+                                {
+                                    text: "were they",
+                                    callback_data: "were they",
+                                },
+                            ],
+                        ],
+                    },
+                });
+                break
+            case "are they":
+            case "they were":
+            case "were they":
+                bot.deleteMessage(chat.id, message_id)
+                bot.sendMessage(chat.id, `14. Liza didn't mean … you. It was just a bad joke.`, {
+                    parse_mode: "HTML",
+                    reply_markup: {
+                        inline_keyboard: [
+                            [
+                                {
+                                    text: "offend",
+                                    callback_data: "offend",
+                                },
+                            ],
+                            [
+                                {
+                                    text: "offending",
+                                    callback_data: "offending",
+                                },
+                            ],
+                            [
+                                {
+                                    text: "to offend",
+                                    callback_data: "to offend",
+                                },
+                            ],
+                        ],
+                    },
+                });
+                break
+            case "offend":
+            case "offending":
+            case "to offend":
+                bot.deleteMessage(chat.id, message_id)
+                bot.sendMessage(chat.id, `15. Debora tells the … stories I have ever heard.`, {
+                    parse_mode: "HTML",
+                    reply_markup: {
+                        inline_keyboard: [
+                            [
+                                {
+                                    text: "better",
+                                    callback_data: "better",
+                                },
+                            ],
+                            [
+                                {
+                                    text: "best",
+                                    callback_data: "best",
+                                },
+                            ],
+                            [
+                                {
+                                    text: "most good",
+                                    callback_data: "most good",
+                                },
+                            ],
+                        ],
+                    },
+                });
+                break
+            case "better":
+            case "best":
+            case "most good":
+                bot.deleteMessage(chat.id, message_id)
+                bot.sendMessage(chat.id, `16. Wendy is … shy to ask what he thinks about her present.`, {
+                    parse_mode: "HTML",
+                    reply_markup: {
+                        inline_keyboard: [
+                            [
+                                {
+                                    text: "enough",
+                                    callback_data: "enough",
+                                },
+                            ],
+                            [
+                                {
+                                    text: "too",
+                                    callback_data: "too",
+                                },
+                            ],
+                            [
+                                {
+                                    text: "very",
+                                    callback_data: "very",
+                                },
+                            ],
+                        ],
+                    },
+                });
+                break
+            case "enough":
+            case "too":
+            case "very":
+                bot.deleteMessage(chat.id, message_id)
+                bot.sendMessage(chat.id, `17. Our health has greatly … ever since we stopped eating sugar.`, {
+                    parse_mode: "HTML",
+                    reply_markup: {
+                        inline_keyboard: [
+                            [
+                                {
+                                    text: "developed",
+                                    callback_data: "developed",
+                                },
+                            ],
+                            [
+                                {
+                                    text: "increased",
+                                    callback_data: "increased",
+                                },
+                            ],
+                            [
+                                {
+                                    text: "improved",
+                                    callback_data: "improved",
+                                },
+                            ],
+                        ],
+                    },
+                });
+                break
+            case"developed":
+            case"increased":
+            case"improved":
             bot.deleteMessage(chat.id, message_id)
-            bot.sendMessage(chat.id, `10. After working at the hospltal for a year, Bob finally … to sleepless nights.            `, {
+            bot.sendMessage(chat.id, `18. Fred … have painted such a winderful picture. He has never liked drawing!`, {
                 parse_mode: "HTML",
                 reply_markup: {
                     inline_keyboard: [
                         [
                             {
-                                text: "was used to",
-                                callback_data: "was used to",
+                                text: "shouldn't",
+                                callback_data: "shouldn't",
                             },
                         ],
                         [
                             {
-                                text: "got used to",
-                                callback_data: "got used to",
+                                text: "needn't",
+                                callback_data: "needn't",
                             },
                         ],
                         [
                             {
-                                text: "used to",
-                                callback_data: "used to",
+                                text: "can't",
+                                callback_data: "can't",
                             },
                         ],
                     ],
