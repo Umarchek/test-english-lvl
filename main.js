@@ -660,9 +660,11 @@ const start = () => {
                 two()
                 break
             case "isn't lift":
+                count = count + 0
                 two()
                 break
             case "to not lift":
+                count = count + 0
                 two()
                 break
             case "seeing":
@@ -670,15 +672,19 @@ const start = () => {
                 third()
                 break
             case "to see":
+                count = count + 0
                 third()
                 break
             case "he saw":
+                count = count + 0
                 third()
                 break
             case "have been":
+                count = count + 0
                 four()
                 break
             case "are":
+                count = count + 0
                 four()
                 break
             case "were":
@@ -686,6 +692,7 @@ const start = () => {
                 four()
                 break
             case "had cut it":
+                count = count + 0
                 five()
                 break
             case "had it cut":
@@ -693,6 +700,7 @@ const start = () => {
                 five()
                 break
             case "have to cut it":
+                count = count + 0
                 five()
                 break
             case "faster":
@@ -700,15 +708,19 @@ const start = () => {
                 six()
                 break
             case "fastly":
+                count = count + 0
                 six()
                 break
             case "more fast":
+                count = count + 0
                 six()
                 break
             case "but":
+                count = count + 0
                 seven()
                 break
             case "or":
+                count = count + 0
                 seven()
                 break
             case "nor":
@@ -716,9 +728,11 @@ const start = () => {
                 seven()
                 break
             case "arrive":
+                count = count + 0
                 eight()
                 break
             case "comes":
+                count = count + 0
                 eight()
                 break
             case "reach":
@@ -726,6 +740,7 @@ const start = () => {
                 eight()
                 break
             case "talked":
+                count = count + 0
                 nine()
                 break
             case "be talking":
@@ -733,6 +748,7 @@ const start = () => {
                 nine()
                 break
             case "have talked":
+                count = count + 0
                 nine()
                 break
             case "had had":
@@ -740,12 +756,15 @@ const start = () => {
                 ten()
                 break
             case "were having":
+                count = count + 0
                 ten()
                 break
             case "would have":
+                count = count + 0
                 ten()
                 break
             case "was used to":
+                count = count + 0
                 eleven()
                 break
             case "got used to":
@@ -753,9 +772,11 @@ const start = () => {
                 eleven()
                 break
             case "used to":
+                count = count + 0
                 eleven()
                 break
             case "have been training":
+                count = count + 0
                 twelve()
                 break
             case "had been training":
@@ -763,12 +784,15 @@ const start = () => {
                 twelve()
                 break
             case "must have training":
+                count = count + 0
                 twelve()
                 break
             case "haven't helped":
+                count = count + 0
                 thirteen()
                 break
             case "wouldn't help":
+                count = count + 0
                 thirteen()
                 break
             case "hadn't helped":
@@ -776,6 +800,7 @@ const start = () => {
                 thirteen()
                 break
             case "are they":
+                count = count + 0
                 fourteen()
                 break
             case "they were":
@@ -783,12 +808,15 @@ const start = () => {
                 fourteen()
                 break
             case "were they":
+                count = count + 0
                 fourteen()
                 break
             case "offend":
+                count = count + 0
                 fifteen()
                 break
             case "offending":
+                count = count + 0
                 fifteen()
                 break
             case "to offend":
@@ -796,6 +824,7 @@ const start = () => {
                 fifteen()
                 break
             case "better":
+                count = count + 0
                 sixteen()
                 break
             case "best":
@@ -803,9 +832,11 @@ const start = () => {
                 sixteen()
                 break
             case "most good":
+                count = count + 0
                 sixteen()
                 break
             case "enough":
+                count = count + 0
                 seventeen()
                 break
             case "too":
@@ -813,12 +844,15 @@ const start = () => {
                 seventeen()
                 break
             case "very":
+                count = count + 0
                 seventeen()
                 break
             case "developed":
+                count = count + 0
                 eighteen()
                 break
             case "increased":
+                count = count + 0
                 eighteen()
                 break
             case "improved":
@@ -826,9 +860,11 @@ const start = () => {
                 eighteen()
                 break
             case "shouldn't":
+                count = count + 0
                 nineteen()
                 break
             case "needn't":
+                count = count + 0
                 nineteen()
                 break
             case "can't":
@@ -840,12 +876,15 @@ const start = () => {
                 twenty()
                 break
             case "wrote":
+                count = count + 0
                 twenty()
                 break
             case "had written":
+                count = count + 0
                 twenty()
                 break
             case "will start":
+                count = count + 0
                 bot.sendMessage(chat.id, `
                 Ответы на тест по английскому для 8-го класса
                     Ваш результат:
@@ -853,6 +892,7 @@ const start = () => {
                 Вы ответили правильно на ${count} вопросов из 20`)
                 break
             case "is starting":
+                count = count + 0
                 bot.sendMessage(chat.id, `
                 Ответы на тест по английскому для 8-го класса
                     Ваш результат:
@@ -862,10 +902,10 @@ const start = () => {
             case "starts":
                 count = count + 1
                 bot.sendMessage(chat.id, `
-                Ответы на тест по английскому для 8-го класса
+Ответы на тест по английскому для 8-го класса
                     Ваш результат:
 
-                Вы ответили правильно на ${count} вопросов из 20`)
+<b>Вы ответили правильно на ${count} вопросов из 20</b>`)
                 break
         }
     });
